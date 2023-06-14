@@ -18,4 +18,4 @@ Integrantes:
 
 #### Diagrama: 
 
-![alt text](docs\imgs\diagrama.png)
+![alt text](docs/imgs/diagrama.png)
