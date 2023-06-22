@@ -1,0 +1,23 @@
+version: '3'
+services:
+  model:
+    container_name: recommendation_system_api
+    build:
+      context: ./
+      dockerfile: ./docker/model/Dockerfile
+    ports:
+      - 1080:80  # host:container
+    volumes:
+      - ./docker/model:/model_v/
+  react:
+    container_name: react_web_api
+    build:
+      context: ./
+      dockerfile: ./docker/react/Dockerfile
+    ports:
+      - 3000:3000  # host:container
+    depends_on:
+      - model
+    volumes:
+      - ./docker/react:/app/
+      - /app/node_modules
