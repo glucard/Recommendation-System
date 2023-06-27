@@ -17,18 +17,21 @@ Integrantes:
 
 ![alt text](docs/imgs/diagrama.png)
 
-### How to use
-
+## How to use:
+### Without __Docker__:
+ Require __Python__ and __NodeJs__ installed.
  - First download the repo using `git clone https://github.com/glucard/Recommendation-System.git`
  - next `cd Recommendation-System`
  - Then execute the recommendation api:
+    - `pip install numpy scikit-learn pandas flask_restful Flask-Cors`
     - `python ./model/model.py`
  - And the frontend:
     - `cd react/frontend`
     - `npm i`
     - `npm run start`
 
-### Execute with docker
+### With __Docker__:
+Require __Docker__ installed.
 - First download the repo using `git clone https://github.com/glucard/Recommendation-System.git`
 - Then `cd Recommendation-System`
 - and `docker-compose up`
