@@ -13,10 +13,6 @@ Integrantes:
 #### Conteudos:
 - Recomendação de Livros.
 
-#### Diagrama: 
-
-![alt text](docs/imgs/diagrama.png)
-
 ## How to use:
 ### Without __Docker__:
  Require __Python__ and __NodeJs__ installed.
